@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     My Account
                   </a>
@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     FAQs
                   </a>
@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     Categories
                   </a>
@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     All Products
                   </a>
@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     Refund Policy
                   </a>
@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     About Us
                   </a>
@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     Cancellation Policy
                   </a>
@@ -121,7 +121,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     Terms and Conditions
                   </a>
@@ -129,7 +129,7 @@ export default function RootLayout({ children }) {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-blue-600 text-[#FFFFFFB2] text-[16px] font-medium"
+                    className="hover:text-[#BE968E] text-[#FFFFFFB2] text-[16px] font-medium"
                   >
                     Privacy Policy
                   </a>

@@ -100,7 +100,7 @@ export default function Dashboard() {
             <li>
               <a
                 href="/"
-                className="hover:text-blue-600 transition text-base font-medium"
+                className="hover:text-[#BE968E] transition text-base font-medium"
               >
                 Home
               </a>
@@ -111,7 +111,7 @@ export default function Dashboard() {
             <li>
               <a
                 href="/category"
-                className="hover:text-blue-600 transition text-base font-medium"
+                className="hover:text-[#BE968E] transition text-base font-medium"
               >
                 Our Category
               </a>
@@ -119,7 +119,7 @@ export default function Dashboard() {
             <li>
               <span className="text-[#020202] text-base font-medium">›</span>
             </li>
-            <li className="text-[#8A8A8A] text-base font-medium ">
+            <li className="text-[#8A8A8A] md:text-base text-sm font-medium ">
               Product Details
             </li>
           </ol>
@@ -230,26 +230,58 @@ export default function Dashboard() {
               Lorem ipsum dolor sit , consectetuer adipiscing elit, sed diam
               nonummy Lorem ipsum dolor sit amet, diam nonummy
             </p>
+            <div className="flex flex-col gap-5">
+              <div className="relative inline-block w-[299px] h-[45px]">
+                <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-[#020202]">
+                  Size
+                </label>
 
-            <div>
-              <label className="block mb-2 font-medium text-gray-700">
-                Size
-              </label>
-              <select className="border rounded px-3 py-2 w-32">
-                <option>XXL</option>
-                <option>XL</option>
-                <option>L</option>
-              </select>
-            </div>
-            <div>
-              <label className="block mb-2 font-medium text-gray-700">
-                Type
-              </label>
-              <select className="border rounded px-3 py-2 w-32">
-                <option>Cotton</option>
-                <option>Wool</option>
-                <option>Silk</option>
-              </select>
+                <select className="w-full appearance-none border bg-white border-gray-300 rounded-lg px-4 py-3  ">
+                  <option>2XL</option>
+                  <option>XL</option>
+                  <option>L</option>
+                </select>
+
+                <svg
+                  className="w-4 h-4 absolute right-3 top-1/2 transform -translate-y-1/2 text-black pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+
+              <div className="relative inline-block w-[299px] h-[45px]">
+                <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-[#020202]">
+                  Type
+                </label>
+
+                <select className="w-full appearance-none border bg-white border-gray-300 rounded-lg px-4 py-3  ">
+                  <option>Cotton</option>
+                  <option>Wool</option>
+                  <option>Silk</option>
+                </select>
+
+                <svg
+                  className="w-4 h-4 absolute right-3 top-1/2 transform -translate-y-1/2 text-black pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
             </div>
 
             <div className="flex flex-col gap-2 items-start">
@@ -378,7 +410,7 @@ export default function Dashboard() {
                     borderRadius: "50% 50% 50% 25% / 50% 50% 50% 25%",
                   }}
                 >
-                  <div className="flex gap-1">
+                  <div className="flex gap-1 w-16 p-1">
                     <span className="w-[2px] h-[2px] bg-white rounded-full"></span>
                     <span className="w-[2px] h-[2px] bg-white rounded-full"></span>
                     <span className="w-[2px] h-[2px] bg-white rounded-full"></span>
@@ -401,13 +433,14 @@ export default function Dashboard() {
                         {review.name}
                       </h4>
 
-                      <div className="flex items-center gap-1  my-2">
-                        {Array.from({ length: review.rating }).map((_, i) => (
+                      <div className="flex items-center gap-1 my-2">
+                        {Array.from({ length: 5 }).map((_, i) => (
                           <span key={i}>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24"
                               fill={i < review.rating ? "#BE968E" : "#fff"}
+                              stroke="#BE968E"
                               className="md:w-5 md:h-5 h-4 w-4"
                             >
                               <path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.1-1.01L12 2z" />
