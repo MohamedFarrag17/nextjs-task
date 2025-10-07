@@ -29,17 +29,17 @@ export default function Dashboard() {
   const reviews = [
     {
       name: "Alex Daevrn",
-      rating: 5,
+      rating: 4,
       text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ",
     },
     {
       name: "Alex Daevrn",
-      rating: 5,
+      rating: 4,
       text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ",
     },
     {
       name: "Alex Daevrn",
-      rating: 5,
+      rating: 4,
       text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ",
     },
   ];
@@ -432,20 +432,25 @@ export default function Dashboard() {
                       <h4 className="font-semibold md:text-xl text-sm text-black">
                         {review.name}
                       </h4>
-
                       <div className="flex items-center gap-1 my-2">
                         {Array.from({ length: 5 }).map((_, i) => (
-                          <span key={i}>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill={i < review.rating ? "#BE968E" : "#fff"}
-                              stroke="#BE968E"
-                              className="md:w-5 md:h-5 h-4 w-4"
-                            >
-                              <path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.1-1.01L12 2z" />
-                            </svg>
-                          </span>
+                          <svg
+                            key={i}
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="20"
+                            height="20"
+                            style={{
+                              fill:
+                                i < review.rating
+                                  ? "#BE968E"
+                                  : "rgba(190, 150, 142, 0.3)",
+                              stroke: "#BE968E",
+                              strokeWidth: 2,
+                            }}
+                          >
+                            <path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.1-1.01L12 2z" />
+                          </svg>
                         ))}
                       </div>
                     </div>
